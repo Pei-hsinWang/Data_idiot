@@ -16,9 +16,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/Pei-hsinWang/Data_idiot">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/main.png" alt="DataPro Analytics Suite Logo" width="80">
-  </a>
+
 
   <h3 align="center">🔬 DataPro Analytics Suite</h3>
 
@@ -54,18 +52,25 @@
 </div>
 
 
-## 系统要求
+##🔒 系统要求
 - Windows 10/11 (64位)
 - 至少4GB RAM
 - 800MB可用磁盘空间
 
 ## 🚀 部署说明
 本应用为 Windows 平台打包的桌面程序，部署方式如下：
-1. 访问 [GitHub 最新发布页面](https://github.com/Pei-hsinWang/Data_idiot) 下载 `Data_idiot.exe` 安装包。
+1. 访问 [GitHub项目页面](https://github.com/Pei-hsinWang/Data_idiot) 下载 `Data_idiot.exe` 安装包。
 2. 双击运行 `.exe` 文件进行自解压。
 3. 解压完成后，双击目录下的 `启动文件.exe` 即可运行应用。
 
 无需联网或安装额外依赖，所有依赖均已打包在安装包中。
+
+命令行启动：
+1. 打开命令行窗口，进入项目目录。
+2. 运行以下命令启动应用：
+```cmd
+streamlit run main.py
+```
 
 ## 🛠️ 技术栈与框架
 
