@@ -59,13 +59,14 @@
 
 ## 🚀 部署说明
 本应用为 Windows 平台打包的桌面程序，部署方式如下：
-1. 访问 [GitHub项目页面](https://github.com/Pei-hsinWang/Data_idiot) 下载 `Data_idiot.exe` 安装包。
-2. 双击运行 `.exe` 文件进行自解压。
-3. 解压完成后，双击目录下的 `启动文件.exe` 即可运行应用。
+1. 访问 [GitHub项目页面](https://github.com/Pei-hsinWang/Data_idiot)
+2. 找到右侧的Release(发布)版本，点击下载最新版本的`exe`自解压文件
+3. 运行下载好的文件进行自解压。
+4. 解压完成后，双击目录下的 `启动文件.exe` 即可运行应用。
 
 无需联网或安装额外依赖，所有依赖均已打包在安装包中。
 
-命令行启动：
+#### 命令行启动：
 1. 打开命令行窗口，进入项目目录。
 2. 运行以下命令启动应用：
 ```cmd
@@ -81,12 +82,12 @@ streamlit run main.py
 - **数据可视化**: [Matplotlib](https://matplotlib.org/)
 - **数据处理**: [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/)
 - **缺失值插补**: [Pandas](https://pandas.pydata.org/), [Scikit-learn](https://scikit-learn.org/),[xgboost](https://xgboost.readthedocs.io/en/latest/)
-- **ML与可解释性**: [Scikit-learn](https://scikit-learn.org/), [SHAP](https://shap.readthedocs.io/en/latest/),[xgboost](https://xgboost.readthedocs.io/en/latest/),[lightgbm](https://lightgbm.readthedocs.io/en/latest/)
+- **ML与可解释性**: [Scikit-learn](https://scikit-learn.org/), [SHAP](https://shap.readthedocs.io/en/latest/),[xgboost](https://xgboost.readthedocs.io/en/latest/),[lightgbm](https://lightgbm.readthedocs.io/en/latest/),[PyALE](https://github.com/DanaJomar/PyALE)
 
 
 ## 📱 界面预览
 
-以下是 DataPro Analytics Suite 的主要功能页面截图，直观展示了各模块的交互方式与可视化效果：
+以下是 Data_idiot的主要功能页面截图，直观展示了各模块的交互方式与可视化效果：
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
   <div style="text-align: center; max-width: 45%;">
@@ -117,7 +118,32 @@ streamlit run main.py
   <div style="text-align: center; max-width: 45%;">
     <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/Shap_preview_2.png" alt="Shap分析2" width="100%">
     <p>SHAP值散点图：特征与输出关系可视化</p>
+  </div>  
+    <div style="text-align: center; max-width: 45%;">
+    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/ale_preview.png" alt="Ale累计局部效应图" width="100%">
+    <p>Ale累计局部效应图</p>
   </div>
+  <div style="text-align: center; max-width: 45%;">
+    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/cor_fig_preview.png" alt="相关系数热力图" width="100%">
+    <p>相关系数热力图：展示变量之间的相关关系</p>
+  </div>
+  <div style="text-align: center; max-width: 45%;">
+    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/joint_distribution_preview.png" alt="变量联合分布图" width="100%">
+    <p>变量联合分布图：初步探索变量之间的关系</p>
+  </div>
+  <div style="text-align: center; max-width: 45%;">
+    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/hete_analysis_preview.png" alt="异质性分析森林图" width="100%">
+    <p>异质性分析森林图：可视化展现异质性分析结果</p>
+  </div>
+  <div style="text-align: center; max-width: 45%;">
+    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/specon_preview.png" alt="空间计量工具预览" width="100%">
+    <p>空间计量工具</p>  
+  </div>
+  <div style="text-align: center; max-width: 45%;">
+    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/spillover_preview.png" alt="空间溢出效应边界图" width="100%">
+    <p>空间溢出效应边界图</p>
+
+  </div>  
 </div>
 
 ## 📋 主要功能
@@ -128,25 +154,37 @@ streamlit run main.py
 - 可视化对比插补前后的缺失情况  
 
 ### 📁 数据合并
-- 支持 CSV 和 Excel 文件导入  
+- 支持 `CSV` 和 `xlsx` 文件导入  
 - 提供多种表连接方式（左连接、右连接、内连接等）  
 
-### 📊 数据集结
+### 📊 综合指数计算
 #### **支持多种客观赋权法的综合指数方法**
-1. 📈 熵权法（Entropy Weight Method）
-2. 🎯 Topsis法（逼近理想解排序法）
-3. 📊 变异系数法（Coefficient of Variation）
-4. 🧠 主成分分析法（PCA）
-5. 🌐 灰色关联法（Grey Relational Analysis）
+1. 📈 **熵权法**（Entropy Weight Method）
+2. 🎯 **Topsis法**（逼近理想解排序法）
+3. 📊 **变异系数法**（Coefficient of Variation）
+4. 🧠 **主成分分析法**（PCA）
+5. 🌐 **灰色关联法**（Grey Relational Analysis）
 
 ### 📈 数据探索
-- 中位数分组：适用于实证研究中的异质性分析  
-- 指标比重计算：用于论文图表支持与结果展示  
-- 宽面板转长面板：方便时序数据分析与建模  
+- **中位数分组**：适用于实证研究中的异质性分析  
+- **指标比重计算****：用于论文图表支持与结果展示  
+- **宽面板转长面板**：方便时序数据分析与建模  
 
-### 🤖 机器学习可解释性
-- SHAP值解释：理解模型预测背后的驱动因素  
-- 支持导出特征重要性条形图和散点图  
+### 🗄机器学习可解释性
+- **SHAP值解释**：理解模型预测背后的驱动因素  
+- **ALE图解释**：ALE图展示了特征对模型预测的平均影响。
+
+### 🎨 绘图工具
+- **相关系数热力图**：展示变量之间的相关关系
+- **变量联合分布图**：初步探索变量之间的关系
+- **异质性分析森林图**：可视化展现异质性分析结果
+- **空间溢出效应边界图**：显示空间溢出效应边界
+
+### 🌍 空间计量工具
+- **空间滞后项生成**：用于计算Stata没有的**SLX**和**SDEM**模型
+- **空间门槛模型——权重矩阵法**：用于空间溢出效应的边界计算
+- **空间门槛模型——虚拟变量法**：用于空间溢出效应的边界计算
+
 ## ❓ 常见问题
 
 **Q: 应用运行缓慢怎么办?**
