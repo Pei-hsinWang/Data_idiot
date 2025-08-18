@@ -89,61 +89,71 @@ streamlit run main.py
 
 以下是 Data_idiot的主要功能页面截图，直观展示了各模块的交互方式与可视化效果：
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-  <div style="text-align: center; max-width: 45%;">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/main.png" alt="主界面" width="100%">
-    <p>主界面：功能选择中心</p>
-  </div>
 
-  <div style="text-align: center; max-width: 45%;">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/Data_Imputation_preview.png" alt="数据插补工具页面" width="100%">
-    <p>数据插补：多种缺失值处理方法可视化展示</p>
-  </div>
 
-  <div style="text-align: center; max-width: 45%;">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/Data_Merge_preview.png" alt="数据集合并工具页面" width="100%">
-    <p>数据合并：支持多格式导入与灵活合并策略</p>
-  </div>
-
-  <div style="text-align: center; max-width: 45%;">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/Data_exploration_preview.png" alt="数据探索页面" width="100%">
-    <p>数据探索：中位数分组、指标比重分析等实用功能</p>
-  </div>
-
-  <div style="text-align: center; max-width: 45%;">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/Interpretable_ML_preview.png" alt="机器学习可解释性页面" width="100%">
-    <p>机器学习可解释性：SHAP值分析与图形导出</p>
-  </div>
-
-  <div style="text-align: center; max-width: 45%;">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/Shap_preview_2.png" alt="Shap分析2" width="100%">
-    <p>SHAP值散点图：特征与输出关系可视化</p>
-  </div>  
-    <div style="text-align: center; max-width: 45%;">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/ale_preview.png" alt="Ale累计局部效应图" width="100%">
-    <p>Ale累计局部效应图</p>
-  </div>
-  <div style="text-align: center; max-width: 45%;">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/cor_fig_preview.png" alt="相关系数热力图" width="100%">
-    <p>相关系数热力图：展示变量之间的相关关系</p>
-  </div>
-  <div style="text-align: center; max-width: 45%;">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/joint_distribution_preview.png" alt="变量联合分布图" width="100%">
-    <p>变量联合分布图：初步探索变量之间的关系</p>
-  </div>
-  <div style="text-align: center; max-width: 45%;">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/hete_analysis_preview.png" alt="异质性分析森林图" width="100%">
-    <p>异质性分析森林图：可视化展现异质性分析结果</p>
-  </div>
-  <div style="text-align: center; max-width: 45%;">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/specon_preview.png" alt="空间计量工具预览" width="100%">
-    <p>空间计量工具</p>  
-  </div>
-  <div style="text-align: center; max-width: 45%;">
-    <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/spillover_preview.png" alt="空间溢出效应边界图" width="100%">
-    <p>空间溢出效应边界图</p>
-
-  </div>  
+<div align="center">
+  <table style="width:100%; border-collapse: collapse;">
+    <tr>
+      <td style="text-align: center; padding: 10px;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/main.png" alt="主界面" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <p style="margin-top: 10px; font-weight: 500;">主界面：功能选择中心</p>
+      </td>
+      <td style="text-align: center; padding: 10px;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/Data_Imputation_preview.png" alt="数据插补工具页面" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <p style="margin-top: 10px; font-weight: 500;">数据插补：多种缺失值处理方法可视化展示</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center; padding: 10px;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/Data_Merge_preview.png" alt="数据集合并工具页面" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <p style="margin-top: 10px; font-weight: 500;">数据合并：支持多格式导入与灵活合并策略</p>
+      </td>
+      <td style="text-align: center; padding: 10px;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/Data_exploration_preview.png" alt="数据探索页面" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <p style="margin-top: 10px; font-weight: 500;">数据探索：中位数分组、指标比重分析等实用功能</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center; padding: 10px;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/Interpretable_ML_preview.png" alt="机器学习可解释性页面" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <p style="margin-top: 10px; font-weight: 500;">机器学习可解释性：SHAP值分析与图形导出</p>
+      </td>
+      <td style="text-align: center; padding: 10px;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/Shap_preview_2.png" alt="Shap分析2" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <p style="margin-top: 10px; font-weight: 500;">SHAP值散点图：特征与输出关系可视化</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center; padding: 10px;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/ale_preview.png" alt="Ale累计局部效应图" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <p style="margin-top: 10px; font-weight: 500;">Ale累计局部效应图</p>
+      </td>
+      <td style="text-align: center; padding: 10px;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/cor_fig_preview.png" alt="相关系数热力图" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <p style="margin-top: 10px; font-weight: 500;">相关系数热力图：展示变量之间的相关关系</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center; padding: 10px;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/joint_distribution_preview.png" alt="变量联合分布图" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <p style="margin-top: 10px; font-weight: 500;">变量联合分布图：初步探索变量之间的关系</p>
+      </td>
+      <td style="text-align: center; padding: 10px;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/hete_analysis_preview.png" alt="异质性分析森林图" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <p style="margin-top: 10px; font-weight: 500;">异质性分析森林图：可视化展现异质性分析结果</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center; padding: 10px;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/specon_preview.png" alt="空间计量工具预览" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <p style="margin-top: 10px; font-weight: 500;">空间计量工具</p>
+      </td>
+      <td style="text-align: center; padding: 10px;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/spillover_preview.png" alt="空间溢出效应边界图" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <p style="margin-top: 10px; font-weight: 500;">空间溢出效应边界图</p>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ## 📋 主要功能
