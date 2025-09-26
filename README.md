@@ -95,7 +95,7 @@ streamlit run main.py
   <table style="width:100%; border-collapse: collapse;">
     <tr>
       <td style="text-align: center; padding: 10px;">
-        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/main.png" alt="主界面" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
+        <img src="https://raw.githubusercontent.com/Pei-hsinWang/Data_idiot/master/preview_fig/Web_page.png" alt="主界面" width="100%" style="max-width: 400px; border-radius: 6px; border: 1px solid #eee;">
         <p style="margin-top: 10px; font-weight: 500;">主界面：功能选择中心</p>
       </td>
       <td style="text-align: center; padding: 10px;">
