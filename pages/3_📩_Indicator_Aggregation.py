@@ -98,7 +98,7 @@ with tab1:
                 direction = st.selectbox(f"{col} 的指标方向", ["正向指标", "负向指标"], key=dir_key)
                 directions[col] = direction
 
-            if st.button("开始计算"):
+            if st.button("开始计算",key='start_button_1'):
                 with st.spinner('🔄 正比处理并计算权重，请稍等...'):
                     # 调用 utils 中的方法进行熵权法计算
                     result_df,score_df = IndicatorsAggregation.entropy_weight_method(df_entropy[selected_cols], cols=selected_cols, directions=directions)
@@ -206,7 +206,7 @@ with tab2:
                 direction = st.selectbox(f"{col} 的指标方向", ["正向指标", "负向指标"], index=0, key=dir_key)
                 directions[col] = direction
 
-            if st.button("开始计算"):
+            if st.button("开始计算",key='start_button_2'):
                 with st.spinner('🔄 正在计算熵权TOPSIS得分，请稍等...'):
                     weight_df,score_df = IndicatorsAggregation.entropy_weight_topsis_method(df_topsis[selected_cols], directions=directions)
 
@@ -307,7 +307,7 @@ with tab3:
                 direction = st.selectbox(f"{col} 的指标方向", ["正向指标", "负向指标"], key=dir_key)
                 directions[col] = direction
 
-            if st.button("开始计算"):
+            if st.button("开始计算",key='start_button_3'):
                 with st.spinner('🔄 正在计算变异系数法权重与得分，请稍等...'):
                     weight_df,score_df = IndicatorsAggregation.coefficient_of_variation_method(df_cv[selected_cols], cols=selected_cols, directions=directions)
 
@@ -338,7 +338,7 @@ with tab3:
                 st.download_button(
                     label=f"📥 点击下载 {export_format.upper()} 文件",
                     data=export_data,
-                    file_name=f"entropy_topsis_weight_result.{file_extension}",
+                    file_name=f"coefficient_of_variation_result.{file_extension}",
                     mime=mime_type
                 )
 
