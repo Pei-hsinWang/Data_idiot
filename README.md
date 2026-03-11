@@ -1,95 +1,88 @@
-# 🔬 Data idiots Analytics Suite
 
-数据处理和分析脚本工具
-
-<!-- PROJECT SHIELDS -->
-
+# 🚀 Data_idiot 
+> **一站式经管实证研究助手 | 零代码 · 本地化 · 可视化**
 
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![MIT License][license-shield]][license-url]
-
-
-<!-- PROJECT LOGO -->
+[![Issues][issues-shield]][issues-url]
 
 
 
-<br />
-<div align="center">
+## 💡 项目简介
 
+**Data_idiot** 是一款专为经管类实证研究设计的桌面端数据处理工具。
 
-  <h3 align="center">🔬 DataPro Analytics Suite</h3>
+它集成了从**数据清洗**、**指标构建**到**模型解释**的全流程工具包。无需编写复杂的 Python/R/Stata 代码，只需通过**鼠标点击交互**，即可完成缺失值插补、综合指数计算、空间计量建模及高质量绘图任务。
 
-  <p align="center">
-    一站式数据处理桌面应用
-    <br />
-    <a href="https://github.com/Pei-hsinWang/Data_idiot"><strong>探索项目文档 »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Pei-hsinWang/Data_idiot">查看 Demo</a>
-    ·
-    <a href="https://github.com/Pei-hsinWang/Data_idiot/issues">报告 Bug</a>
-    ·
-    <a href="https://github.com/Pei-hsinWang/Data_idiot/issues">提出新功能建议</a>
-  </p>
-</div>
+---
 
-## ✨ 产品特点
+## 🛠️ 核心功能模块
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><b>📊 直观可视化</b></td>
-      <td align="center"><b>⚡ 高效处理</b></td>
-      <td align="center"><b>🔒 本地运行</b></td>
-    </tr>
-    <tr>
-      <td>交互式图表与数据探索</td>
-      <td>傻瓜式点击交互处理数据集</td>
-      <td>数据安全，无需上传至云端</td>
-    </tr>
-  </table>
-</div>
+### 1. 🧹 数据清洗与预处理
+- **智能插补**：支持均值、KNN、多重插补等多种算法，并提供插补前后缺失情况可视化对比。
+- **灵活合并**：支持 `CSV`/`xlsx` 导入，提供左/右/内/外连接等多种表连接策略。
+- **数据重塑**：一键实现宽面板转长面板，适配时序分析需求。
 
+### 2. 📐 综合指数构建
+内置多种主流客观赋权法，自动计算权重并生成指数：
+- 📈 **熵权法** (Entropy Weight Method)
+- 🎯 **TOPSIS** (逼近理想解排序法)
+- 📊 **变异系数法** (Coefficient of Variation)
+- 🧠 **主成分分析** (PCA)
+- 🌐 **灰色关联分析** (Grey Relational Analysis)
 
-## 🔒 系统要求
-- Windows 10/11 (64位)
-- 至少4GB RAM
-- 800MB可用磁盘空间
+### 3. 📈 深度数据探索
+- **异质性分析**：自动进行中位数分组，快速识别组间差异。
+- **指标比重**：计算并展示关键指标的贡献度，辅助论文图表制作。
+- **联合分布**：初步探索变量间的非线性关系。
 
-## 🚀 部署说明
-本应用为 Windows 平台打包的桌面程序，部署方式如下：
-1. 访问 [GitHub项目页面](https://github.com/Pei-hsinWang/Data_idiot)
-2. 找到右侧的Release(发布)版本，点击下载最新版本的`exe`自解压文件
-3. 运行下载好的文件进行自解压。
-4. 解压完成后，双击目录下的 `启动文件.exe` 即可运行应用。
+### 4. 🤖 机器学习与可解释性
+不仅提供预测，更关注“为什么”：
+- **SHAP 值分析**：精准量化特征对模型预测的驱动因素（支持全局与局部解释）。
+- **ALE 图分析**：展示特征对模型预测的平均边际效应，克服 SHAP 在高维下的局限。
+- **支持模型**：XGBoost, LightGBM, Scikit-Learn 全系列。
 
-无需联网或安装额外依赖，所有依赖均已打包在安装包中。
+### 5. 🌍 空间计量专用工具
+解决传统软件（如 Stata）难以实现的复杂空间模型：
+- **空间滞后项生成**：支持 **SLX** 和 **SDEM** 模型变量构建。
+- **空间门槛模型**：提供“权重矩阵法”与“虚拟变量法”两种边界计算策略。
+- **溢出效应可视化**：制作空间溢出效应边界图。
 
-#### 命令行启动：
-1. 打开命令行窗口，进入项目目录。
-2. 运行以下命令启动应用：
-```cmd
+### 6. 🎨 学术绘图工具箱
+- 🔥 相关系数热力图
+- 🌲 异质性分析森林图
+- 🗺️ 空间溢出效应边界图
+- 📉 变量联合分布图
+
+---
+
+## 🚀 快速开始
+
+本应用为 **Windows** 平台打包的独立桌面程序，**无需安装 Python 环境**，开箱即用。
+
+### 方式一：桌面版（推荐）
+1. 前往 [Releases 页面](https://github.com/Pei-hsinWang/Data_idiot/releases) 下载最新版本的 `.exe` 自解压包。
+2. 运行下载的文件进行自解压。
+3. 双击目录中的 `启动文件.exe` 即可启动应用。
+
+### 方式二：源码运行（开发者）
+如果你希望自定义功能或跨平台运行：
+```bash
+# 1. 克隆项目
+git clone https://github.com/Pei-hsinWang/Data_idiot.git
+cd Data_idiot
+
+# 2. 安装依赖
+pip install -r requirements.txt
+
+# 3. 启动应用
 streamlit run main.py
 ```
 
-## 🛠️ 技术栈与框架
+---
 
-本项目基于以下技术构建：
-
-- **前端界面**: [Streamlit](https://streamlit.io) - 快速构建数据应用的 Python 框架
-- **打包工具**: [PyStand](https://github.com/skywind3000/PyStand/) - 嵌入式打包 Python 解释器与依赖库打包
-- **数据可视化**: [Matplotlib](https://matplotlib.org/)
-- **数据处理**: [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/)
-- **缺失值插补**: [Pandas](https://pandas.pydata.org/), [Scikit-learn](https://scikit-learn.org/),[xgboost](https://xgboost.readthedocs.io/en/latest/)
-- **ML与可解释性**: [Scikit-learn](https://scikit-learn.org/), [SHAP](https://shap.readthedocs.io/en/latest/),[xgboost](https://xgboost.readthedocs.io/en/latest/),[lightgbm](https://lightgbm.readthedocs.io/en/latest/),[PyALE](https://github.com/DanaJomar/PyALE)
-
-
-## 📱 界面预览
-
-以下是 Data_idiot的主要功能页面截图，直观展示了各模块的交互方式与可视化效果：
-
-
+## 🖥️ 界面预览
 
 <div align="center">
   <table style="width:100%; border-collapse: collapse;">
@@ -156,72 +149,59 @@ streamlit run main.py
   </table>
 </div>
 
-## 📋 主要功能
 
-### 🔍 数据插补
-- 查看数据描述性统计信息  
-- 支持多种缺失值处理方法（如均值、KNN、多重插补等）  
-- 可视化对比插补前后的缺失情况  
+---
 
-### 📁 数据合并
-- 支持 `CSV` 和 `xlsx` 文件导入  
-- 提供多种表连接方式（左连接、右连接、内连接等）  
+## 📋 系统要求
 
-### 📊 综合指数计算
-#### **支持多种客观赋权法的综合指数方法**
-1. 📈 **熵权法**（Entropy Weight Method）
-2. 🎯 **Topsis法**（逼近理想解排序法）
-3. 📊 **变异系数法**（Coefficient of Variation）
-4. 🧠 **主成分分析法**（PCA）
-5. 🌐 **灰色关联法**（Grey Relational Analysis）
+- **操作系统**: Windows 10 / 11 (64位)
+- **内存**: 至少 4GB RAM (建议 8GB 以上以处理大型数据集)
+- **磁盘空间**: 至少 800MB 可用空间
+- **网络**: 首次运行无需联网，后续使用完全离线
 
-### 📈 数据探索
-- **中位数分组**：适用于实证研究中的异质性分析  
-- **指标比重计算****：用于论文图表支持与结果展示  
-- **宽面板转长面板**：方便时序数据分析与建模  
+> **注意**：目前暂不支持 macOS 或 Linux 系统的桌面版安装包（源码运行模式除外）。
 
-### 🗄机器学习可解释性
-- **SHAP值解释**：理解模型预测背后的驱动因素  
-- **ALE图解释**：ALE图展示了特征对模型预测的平均影响。
+---
 
-### 🎨 绘图工具
-- **相关系数热力图**：展示变量之间的相关关系
-- **变量联合分布图**：初步探索变量之间的关系
-- **异质性分析森林图**：可视化展现异质性分析结果
-- **空间溢出效应边界图**：显示空间溢出效应边界
+## 🛠️ 技术栈
 
-### 🌍 空间计量工具
-- **空间滞后项生成**：用于计算Stata没有的**SLX**和**SDEM**模型
-- **空间门槛模型——权重矩阵法**：用于空间溢出效应的边界计算
-- **空间门槛模型——虚拟变量法**：用于空间溢出效应的边界计算
+本项目基于强大的 Python 生态构建：
 
-## ❓ 常见问题
+- **应用框架**: [Streamlit](https://streamlit.io) (交互式前端)
+- **打包方案**: [PyStand](https://github.com/skywind3000/PyStand/) (嵌入式 Python 运行时)
+- **数据处理**: `Pandas`, `NumPy`
+- **机器学习**: `Scikit-learn`, `XGBoost`, `LightGBM`
+- **模型解释**: `SHAP`, `PyALE`
+- **可视化**: `Matplotlib`, `Seaborn`
 
-**Q: 应用运行缓慢怎么办?**
-A: 关闭其他占用内存较大的程序，或尝试降低数据集大小。
+---
 
-**Q: 支持Mac或Linux系统吗?**
-A: 目前仅支持Windows系统。
+## ❓ 常见问题 (FAQ)
+
+**Q: 运行速度缓慢怎么办？**
+A: 请尝试关闭其他占用内存的程序。如果数据集过大（超过 10 万行），建议在数据探索前先行抽样或使用服务器版源码运行。
+
+**Q: 数据会上传到服务器吗？**
+A: **绝对不会**。本软件设计初衷即为本地化运行，所有数据处理均在您的本地计算机内存中完成，关闭软件后数据即释放。
+
+**Q: 如何反馈 Bug 或请求新功能？**
+A: 欢迎在 [Issues 页面](https://github.com/Pei-hsinWang/Data_idiot/issues) 提交您的问题或建议。
+
+---
 
 ## 📄 许可证
 
-本项目采用 [MIT许可证](LICENSE) 开源
+本项目采用 [MIT 许可证](LICENSE) 开源，允许免费用于学术研究和商业用途。
 
-<!-- links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Pei-hsinWang/Data_idiot?style=flat-square
-[contributors-url]: https://github.com/Pei-hsinWang/Data_idiot/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/Pei-hsinWang/Data_idiot?style=flat-square
+
+[forks-shield]: https://img.shields.io/github/forks/Pei-hsinWang/Data_idiot.svg?style=flat-square
 [forks-url]: https://github.com/Pei-hsinWang/Data_idiot/network/members
-
-[stars-shield]: https://img.shields.io/github/stars/Pei-hsinWang/Data_idiot?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/Pei-hsinWang/Data_idiot.svg?style=flat-square
 [stars-url]: https://github.com/Pei-hsinWang/Data_idiot/stargazers
-
-[issues-shield]: https://img.shields.io/github/issues/Pei-hsinWang/Data_idiot?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/Pei-hsinWang/Data_idiot.svg?style=flat-square
 [issues-url]: https://github.com/Pei-hsinWang/Data_idiot/issues
+[license-shield]: https://img.shields.io/github/license/Pei-hsinWang/Data_idiot.svg?style=flat-square
+[license-url]: https://github.com/Pei-hsinWang/Data_idiot/blob/master/LICENSE
 
-[license-shield]: https://img.shields.io/github/license/Pei-hsinWang/Data_idiot?style=flat-square
-[license-url]: https://github.com/Pei-hsinWang/Data_idiot/blob/main/LICENSE
 
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-blue
-[linkedin-url]: https://www.linkedin.com/in/你的-linkedin-用户名/
